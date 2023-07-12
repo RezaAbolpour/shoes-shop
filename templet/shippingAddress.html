@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-white-750">
+    <div class="continer-home flex gap-5 mt-5">
+        <span class="material-symbols-outlined" id="backcheckout">
+            arrow_back
+        </span>
+        <div class="font-20 font-weight-600">Shipping Address</div>
+    </div>
+    <div id="continer-address" class="overflow-y-auto">
+
+    </div>
+    <div class="continer-home" id="applyshipping">
+        <div style="height: 50px; background-color: black;"
+            class="radius-30 flex item-center mt-5 justify-center color-white">
+            Apply
+        </div>
+    </div>
+    <div class="continer-home" id="open-sheet">
+        <div style="height: 50px; background-color: gray;" class="radius-30 flex item-center mt-5 justify-center">
+            Add New Address
+        </div>
+    </div>
+    <div id="sheet" class="sheet" aria-hidden="true" role="dialog">
+        <div class="overlay"></div>
+        <div class="contents">
+            <header class="controls">
+                <div class="draggable-area">
+                    <div class="draggable-thumb"></div>
+                </div>
+                <button class="close-sheet" type="button" title="Close the sheet">&times;</button>
+            </header>
+            <main class="body">
+                <div class="color-white flex justify-center font-weight-600 font-16" >Enter Your New Address</div>
+                <input type="text" placeholder="Enter titel address" style="height: 30px;" class="radius-4" id="titeladdress">
+                <input type="text" placeholder="Enter location address" style="height: 30px;" class="radius-4" id="idlocationaddress">
+                <button style="height: 30px;" onclick="applyaddres()">Apply</button>
+            </main>
+        </div>
+    </div>
+    <script src="../src/js/shippingaddress.js"></script>
+    <!-- <script src="../src/js/bottomsheet.js"></script> -->
+</body>
+
+</html>

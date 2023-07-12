@@ -1,0 +1,441 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.continer-home {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.continer {
+  height: 100%;
+  width: 100%;
+}
+.width-100 {
+  width: 100%;
+}
+.height-70 {
+  height: 70%;
+}
+.height-38p {
+  height: 38px;
+}
+.padding-4plr {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.flex {
+  display: flex;
+}
+.none-display {
+  display: none;
+}
+.block-display {
+  display: block;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-strat {
+  justify-content: start;
+}
+.item-center {
+  align-items: center;
+}
+.item-end {
+  align-items: end;
+}
+.brand {
+  width: 231px;
+  height: 65px;
+}
+.spiner {
+  width: 48px;
+  height: 48px;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-2 {
+  flex-grow: 2;
+}
+.flex-grow-3 {
+  flex-grow: 3;
+}
+.flex-grow-4 {
+  flex-grow: 9;
+}
+.flex-grow-5 {
+  flex-grow: 9;
+}
+.flex-grow-6 {
+  flex-grow: 9;
+}
+.flex-grow-7 {
+  flex-grow: 9;
+}
+.flex-grow-8 {
+  flex-grow: 9;
+}
+.flex-grow-9 {
+  flex-grow: 9;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.plr-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.ptb-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.p-5 {
+  padding: 10px;
+}
+.mt-5 {
+  margin-top: 10px;
+}
+.radius-30 {
+  border-radius: 30px;
+}
+.radius-4 {
+  border-radius: 4px;
+}
+.radius-10 {
+  border-radius: 10px;
+}
+.border-1 {
+  border: 2px solid #6c7c8b;
+}
+.border-none {
+  border: none;
+}
+.outline-none {
+  outline: none;
+}
+.bg-dark {
+  background: #212529;
+}
+.bg-white-600 {
+  background: #fafafa;
+}
+.bg-gray-600 {
+  background-color: #6f7174;
+}
+.bg-white-680 {
+  background-color: #ededed;
+}
+.bg-white {
+  background: white;
+}
+.bg-white-750 {
+  background-color: #f3f3f3;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-15 {
+  font-size: 15px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-9 {
+  font-size: 9px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.color-white {
+  color: white;
+}
+.color-gray-580 {
+  color: #c3c3c4;
+}
+.text-center {
+  text-align: center;
+}
+.lineonboading {
+  width: 40px;
+  height: 5px;
+}
+.inputlogin {
+  width: 300px;
+  height: 37px;
+}
+.btnonborder {
+  width: 380px;
+  height: 47px;
+}
+.btnonsingin {
+  width: 290px;
+  height: 30px;
+}
+.gap-2 {
+  gap: 2px;
+}
+.gap-5 {
+  gap: 5px;
+}
+#imagwalper {
+  height: 643px;
+  width: 100%;
+}
+.walper {
+  background-image: url("../src/image/walper.png");
+}
+.imgborder {
+  background-image: url("../src/image/WallpaperDog-20534536\ 1.png");
+}
+.infocard {
+  /* background-image: url("../src/image/shoestest.jpg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 0px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-default {
+  cursor: default;
+}
+.pointer-painted {
+  pointer-events: painted;
+}
+.likeorder {
+  background-color: red;
+}
+.pointer-none {
+  pointer-events: none;
+}
+.brand-card {
+  width: 60px;
+  height: 60px;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.overflow-y-auto {
+  overflow-x: auto;
+}
+.active {
+  background-color: #343a40;
+  color: white;
+}
+.cardshoes {
+  width: 135px;
+  height: 120px;
+}
+.cardshoes img {
+  width: 85px;
+  height: 85px;
+}
+.shoessizeinfo {
+  width: 100%;
+  height: 100%;
+}
+.circelSizeColor {
+  width: 35px;
+  height: 35px;
+}
+.wh-35 {
+  width: 35px;
+  height: 35px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+
+.sheet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.sheet[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.sheet .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: var(--overlay);
+  opacity: 0.5;
+}
+
+.sheet .contents {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1rem 1rem 0 0;
+
+  background: var(--background);
+
+  overflow-y: hidden;
+
+  --default-transitions: transform 0.5s, border-radius 0.5s;
+
+  transition: var(--default-transitions);
+  transform: translateY(0);
+
+  width: 100%;
+  max-height: 100vh;
+  height: 40vh;
+
+  box-sizing: border-box;
+}
+
+.sheet .contents:not(.not-selectable) {
+  transition: var(--default-transitions), height 0.5s;
+}
+
+.sheet .contents.fullscreen {
+  border-radius: 0;
+}
+
+.sheet[aria-hidden="true"] .contents {
+  transform: translateY(100%);
+}
+
+.sheet .controls {
+  display: flex;
+}
+
+.sheet .draggable-area {
+  width: 3rem;
+  margin: auto;
+  padding: 1rem;
+  cursor: grab;
+}
+
+.sheet .draggable-thumb {
+  width: inherit;
+  height: 0.25rem;
+  background: var(--divider);
+  border-radius: 0.125rem;
+}
+
+.sheet .close-sheet {
+  border: none;
+  padding: 0.7rem;
+  background-color: #000;
+  color: white;
+}
+
+.sheet .body {
+  flex-grow: 1;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+  gap: 1rem;
+
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fff;
+  --foreground: #000;
+  --divider: #dcdcdc;
+  --overlay: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000;
+    --foreground: #fff;
+    --divider: #333;
+  }
+}
+
+.modal {
+  background-color: white;
+  position: absolute;
+  height: 340px;
+  width: 70%;
+  top: 200px;
+  left: 50px;
+  border-radius: 30px;
+}
+
+.lineactive {
+  background-color: #000;
+  height: 5px;
+  border-radius: 2px;
+}
+.linefull {
+  height: 5px;
+  background-color: rgb(199, 198, 198);
+  border-radius: 1px;
+}
+.color-white-750{
+  color: #696565;
+}
+.modalsearch{
+  background-color: #ededed;
+  position: absolute;
+  height: 340px;
+  width: 81%;
+  top: 120px;
+  left: 18px;
+}

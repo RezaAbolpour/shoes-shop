@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loding</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="flex flex-col continer" id="loadingpage">
+        <div class="flex-grow-3 flex justify-center item-center">
+            <img src="../src/image/brand.png" alt="brand" class="brand">
+        </div>
+        <div  class="flex-grow-1 flex justify-center">
+            <img src="../src/image/spinner-atom.png" alt="sniper" class="spiner" id="spiner">
+        </div>
+    </div>
+    <div class="walper continer" id="previwshoea">
+        <div class="continer flex flex-col">
+            <div  class="flex flex-grow-9">
+            </div>
+            <div class="flex flex-col flex-grow-3 pl-10 color-white" >
+                <div class="pt-10 font-20">Welcome to 👋</div>
+                <div class="pt-10 font-30 font-bold">Shoea</div>
+                <div class="pt-10 font-12">The best sneakers & shoes e-commerse app of the century for your fashion needs!</div>
+            </div>
+        </div>
+    </div>
+    <div class="continer flex flex-col" id="onboarding3">
+        <div class="flex-grow-9 imgborder" id="imgborder">
+        </div>
+        <div class="flex-grow-1 bg-white">
+            <div class="flex flex-col continer">
+                <div class="flex-grow-1">
+                    <p class="font-30 font-weight-600 text-center" id="captinnborder">We provide high quality products just for you</p>
+                </div>
+                <div class="flex-grow-1 flex justify-center item-center gap-2" >
+                    <div class="lineonboading bg-dark" id="lineone"></div>
+                    <div class="lineonboading bg-dark" id="linetwo"></div>
+                    <div class="lineonboading bg-dark" id="linethree"></div>
+                </div>
+                <div class="flex flex-grow-1 justify-center item-center plr-12 ptb-16">
+                    <div class="btnonborder bg-dark radius-30 border-1 color-white flex justify-center item-center" onclick="next(this)">Next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="continer flex flex-col" id="loginpage">
+        <div  class="flex-grow-1">
+            <div >
+                <img src="../src/image/arrow-left-short.png" alt="">
+            </div>
+            <div class="flex justify-center item-center continer">
+                <img src="../src/image/logo.png" alt="">
+            </div>
+        </div>
+        <div  class="flex-grow-1 p-5">
+            <p class="text-center font-weight-600 font-30">Login to Your Account</p>
+            <div class="flex inputlogin radius-4 bg-white-600 item-center" >
+                <img src="../src/image/email.png" alt="mail" id="imgemail">
+                <input type="email" class="width-100 height-70 border-none" id="inputemail">
+            </div>
+            <div class="flex inputlogin radius-4 mt-5 bg-white-600 item-center" >
+                <img src="../src/image/password.png" alt="password" id="imgpassword">
+                <input type="password" class="width-100 height-70 border-none" id="inputpassword">
+            </div>
+            <div class="flex justify-center mt-5">
+                <input type="checkbox" name="" id="">
+                <label for="">Remember me</label>
+            </div>
+        </div>
+        <div  class="flex-grow-1">
+            <div class="flex justify-center item-center continer">
+                <button class="btnonsingin bg-gray-600 radius-30 color-white flex justify-center item-center cursor-default pointer-none" onclick="singinuser(this)" id="singin">Sing In</button>
+            </div>
+        </div>
+    </div>
+    <script src="../src/js/app.js"></script>
+</body>
+</html>

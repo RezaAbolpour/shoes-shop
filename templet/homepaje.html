@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage1</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body onclick="hidensearch()">
+    <div class="flex justify-center item-center">
+        <div class="flex-grow-1 justify-center flex">
+            <img src="../src/image/profile.png" alt="logo">
+        </div>
+        <div class="flex-grow-2">
+            <p id="messagetime"></p>
+            <div class="font-weight-600 font-16 flex">
+                <span id="nameuser"></span>
+                &nbsp;
+                <span id="lastnameuser"></span>
+            </div>
+        </div>
+        <div class="flex-grow-1 flex justify-center gap-2">
+            <img src="../src/image/bell.png" alt="">
+            <img src="../src/image/heart.png" alt="" id="wishlist">
+        </div>
+    </div>
+    <div class="continer-home mt-5 height-38p">
+        <div class="continer flex item-center padding-4plr bg-white-600">
+            <div class="flex item-center width-100">
+                <div class="flex item-center width-100">
+                    <div class="flex item-center">
+                        <img src="../src/image/search.png" alt="">
+                    </div>
+                    <div class="continer flex item-center">
+                        <input type="text" class="width-100 border-none bg-white-600 outline-none" placeholder="Searche"
+                            id="inputsearche" onblur="insersearchdatabase()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="continer-home justify-space-between flex mt-5">
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/nike.png" alt="">
+                </div>
+                <span class="flex justify-center">nike</span>
+            </div>
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/adidas.png" alt="">
+                </div>
+                <span class="flex justify-center">Adidas</span>
+            </div>
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/puma.png" alt="">
+                </div>
+                <span class="flex justify-center">Puma</span>
+            </div>
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/asics.png" alt="">
+                </div>
+                <span class="flex justify-center">Asics</span>
+            </div>
+        </div>
+        <div class="continer-home justify-space-between flex mt-5">
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/Reebok.png" alt="">
+                </div>
+                <span class="flex justify-center">Reebok</span>
+            </div>
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/New_Ba.png" alt="">
+                </div>
+                <span class="flex justify-center">New_Ba..</span>
+            </div>
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/Converse.png" alt="">
+                </div>
+                <span class="flex justify-center">Converse</span>
+            </div>
+            <div onclick="brand(this)">
+                <div class="brand-card radius-30 bg-white-680 flex item-center justify-center">
+                    <img src="../src/image/more.png" alt="">
+                </div>
+                <span class="flex justify-center">More ..</span>
+            </div>
+        </div>
+    </div>
+    <div class="continer-home mt-5">
+        <div class="flex">
+            <div class="width-100 font-weight-600 font-20 font-weight-600 font-16">Most Popular</div>
+            <div class="width-100 flex justify-end ">See All</div>
+        </div>
+    </div>
+    <div class="continer-home flex mt-5 gap-5 overflow-x-auto">
+        <div class="flex justify-center radius-30 p-5 border-1 active" id="all" onclick="popular(this)">All</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="nike" onclick="popular(this)">nike</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="adidas" onclick="popular(this)">Adidas</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="puma" onclick="popular(this)">Puma</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="asics" onclick="popular(this)">Asics</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="reebok" onclick="popular(this)">Reebok</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="new_ba" onclick="popular(this)">New_Ba</div>
+    </div>
+    <div style=" height: 54%;" class="flex flex-col continer-home">
+        <div class="flex-grow-4 overflow-y-auto" id="parentcard">
+
+        </div>
+        <div class="flex-grow-1 flex justify-space-between item-center">
+            <div class="radius-30 flex flex-col justify-center item-center wh-35" id="iconhome">
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+                <span class="font-9">home</span>
+            </div>
+            <div class="radius-30 flex flex-col justify-center item-center wh-35" id="iconshopping_bag">
+                <span class="material-symbols-outlined">
+                    shopping_bag
+                </span>
+                <span class="font-9">cart</span>
+            </div>
+            <div class="radius-30 flex flex-col justify-center item-center wh-35" id="iconshopping_cart">
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span class="font-9">orders</span>
+            </div>
+            <div class="radius-30 flex flex-col justify-center item-center wh-35" id="iconwallet">
+                <span class="material-symbols-outlined">
+                    wallet
+                </span>
+                <span class="font-9">wallet</span>
+            </div>
+            <div class="radius-30 flex flex-col justify-center item-center wh-35" id="iconperson">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+                <span class="font-9">profile</span>
+            </div>
+        </div>
+    </div>
+    <div class="modalsearch continer-home none-display overflow-y-auto" id="recentsearch">
+        
+    </div>
+    <script src="../src/js/home.js"></script>
+</body>
+
+</html>

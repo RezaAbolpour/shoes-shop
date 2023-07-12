@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish list</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-white-750">
+    <div class="continer-home flex gap-5 mt-5">
+        <span class="material-symbols-outlined" id="backhome">
+            arrow_back
+        </span>
+        <div class="font-20 font-weight-600">My Wishlist</div>
+    </div>
+    <div class="continer-home flex mt-5 gap-5 overflow-x-auto">
+        <div class="flex justify-center radius-30 p-5 border-1 active" id="all" onclick="popular(this)">All</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="nike" onclick="popular(this)">nike</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="adidas" onclick="popular(this)">Adidas</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="puma" onclick="popular(this)">Puma</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="asics" onclick="popular(this)">Asics</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="reebok" onclick="popular(this)">Reebok</div>
+        <div class="flex justify-center radius-30 p-5 border-1" id="new_ba" onclick="popular(this)">New_Ba</div>
+    </div>
+    <div style=" height: 100%;" class="flex flex-col continer-home mt-5" >
+        <div  class="flex-grow-4 overflow-y-auto" id="parentcard">
+        </div>
+    <div>
+    <script src="../src/js/wishlist.js"></script>
+</body>
+
+</html>
